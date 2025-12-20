@@ -14,21 +14,23 @@
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <i class="fas fa-car"></i>
+                <div class="logo-icon">
+                    <i class="fas fa-sparkles"></i>
+                </div>
                 <div class="logo-text">
                     <span class="supreme">SUPREME</span>
                     <span class="car-wash">CAR WASH</span>
                 </div>
             </a>
-            <div class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#car-wash"><i class="fas fa-car-side"></i> Car Wash</a></li>
-                <li><a href="#upholstery"><i class="fas fa-couch"></i> Upholstery</a></li>
-                <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
-                <li><a href="tel:+264853029593" class="btn-call"><i class="fas fa-phone-alt"></i> Call Now</a></li>
+                <li><a href="#home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#car-wash"><i class="fas fa-car-side"></i> <span>Car Wash</span></a></li>
+                <li><a href="#upholstery"><i class="fas fa-couch"></i> <span>Upholstery</span></a></li>
+                <li><a href="#contact"><i class="fas fa-phone"></i> <span>Contact</span></a></li>
+                <li><a href="tel:+264853029593" class="btn-call"><i class="fas fa-phone-alt"></i> <span>Call Now</span></a></li>
             </ul>
         </div>
     </nav>
@@ -416,7 +418,7 @@
                                 </div>
                                 <div>
                                     <h4>Service Area</h4>
-                                    <p>Ondangwa & Surrounding Areas</p>
+                                    <p>Windhoek & Surrounding Areas</p>
                                     <small>Namibia</small>
                                 </div>
                             </div>
@@ -489,7 +491,7 @@
             <div class="footer-content">
                 <div class="footer-section about">
                     <div class="footer-logo">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-sparkles"></i>
                         <div class="footer-logo-text">
                             <span class="footer-supreme">SUPREME</span>
                             <span class="footer-carwash">CAR WASH</span>
@@ -497,16 +499,16 @@
                     </div>
                     <p class="footer-description">Professional car wash and upholstery cleaning services in Namibia. Quality service at affordable prices with customer satisfaction guaranteed.</p>
                     <div class="footer-social">
-                        <a href="https://wa.me/264853029593" class="social-icon whatsapp">
+                        <a href="https://wa.me/264853029593" class="social-icon whatsapp" aria-label="WhatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
-                        <a href="tel:+264853029593" class="social-icon phone">
+                        <a href="tel:+264853029593" class="social-icon phone" aria-label="Phone">
                             <i class="fas fa-phone"></i>
                         </a>
-                        <a href="mailto:feizhoujurentrading@gmail.com" class="social-icon email">
+                        <a href="mailto:feizhoujurentrading@gmail.com" class="social-icon email" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
-                        <a href="#" class="social-icon facebook">
+                        <a href="#" class="social-icon facebook" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                     </div>
@@ -527,7 +529,7 @@
                     <ul>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Ondangwa, Namibia</span>
+                            <span>Windhoek, Namibia</span>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
@@ -568,7 +570,6 @@
                 </div>
             </div>
             
-            <!-- DEVELOPER CREDIT ADDED HERE -->
             <div class="footer-bottom">
                 <div class="footer-bottom-content">
                     <p>&copy; <span id="currentYear">2024</span> Supreme Car Wash & Valet Services. All rights reserved.</p>
@@ -590,96 +591,16 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/264853029593" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <a href="https://wa.me/264853029593" class="whatsapp-float" target="_blank" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
         <span class="pulse-ring"></span>
     </a>
 
     <!-- Back to Top Button -->
-    <a href="#home" class="back-to-top" title="Back to Top">
+    <a href="#home" class="back-to-top" title="Back to Top" aria-label="Back to Top">
         <i class="fas fa-chevron-up"></i>
     </a>
 
     <script src="script.js"></script>
-    
-    <!-- Add this CSS for developer credit styling -->
-    <style>
-        /* Developer Credit Styles */
-        .developer-credit {
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .developer-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(255, 107, 0, 0.1);
-            border: 1px solid rgba(255, 107, 0, 0.3);
-            border-radius: 25px;
-            padding: 10px 20px;
-            color: #aaa;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-        
-        .developer-badge:hover {
-            background: rgba(255, 107, 0, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(255, 107, 0, 0.2);
-        }
-        
-        .developer-badge i {
-            color: #ff6b00;
-            font-size: 1rem;
-        }
-        
-        .developer-name {
-            color: #ff6b00;
-            font-weight: bold;
-            font-size: 1rem;
-        }
-        
-        .footer-bottom-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            margin-top: 30px;
-        }
-        
-        .footer-bottom p {
-            color: rgba(255, 255, 255, 0.7);
-            margin: 0;
-            font-size: 0.9rem;
-        }
-        
-        .footer-link {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-link:hover {
-            color: #ff6b00;
-        }
-        
-        /* Mobile responsive */
-        @media (max-width: 768px) {
-            .developer-badge {
-                flex-direction: column;
-                gap: 5px;
-                padding: 15px;
-            }
-            
-            .footer-bottom-content {
-                text-align: center;
-            }
-        }
-    </style>
 </body>
 </html>
-
